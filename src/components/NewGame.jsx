@@ -57,9 +57,12 @@ class NewGame extends React.Component {
     let status;
     if (winner) {
       status = 'Winner: ' + winner;
+    } else if (moves.length == 10) {
+      status = 'Its a TIE!';
     } else {
       status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
     }
+
 
     return (
       <div className="game">

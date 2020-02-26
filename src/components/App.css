@@ -19,17 +19,25 @@ body {
   
   .square {
     background: #fff;
+    color: red;
     border: 1px solid #999;
     float: left;
     font-size: 24px;
     font-weight: bold;
     line-height: 34px;
-    height: 34px;
+    height: 60px;
     margin-right: -1px;
     margin-top: -1px;
     padding: 0;
     text-align: center;
-    width: 34px;
+    width: 60px;
+    border-radius: 10px;
+    transition: .5s;
+  }
+
+  .square:hover {
+    background-color: black;
+    font-size: 40px;
   }
   
   .square:focus {
